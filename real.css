@@ -7,6 +7,8 @@
 body{
     font-family:Arial, sans-serif;
 }
+menu-icon{
+    display: none;}
 
 nav{
     display:flex;
@@ -23,8 +25,9 @@ nav{
 }
 
 nav ul{
-    display:flex;
+    display:none;
     list-style:none;
+    gap: 15px;
 }
 
 nav ul li{
@@ -34,7 +37,7 @@ nav ul li{
 nav ul li a{
     text-decoration:none;
     color:#222;
-    font-size:20px;
+    font-size:2vw;
 }
 
 button{
@@ -43,11 +46,13 @@ button{
     border:none;
     padding:12px 28px;
     border-radius:25px;
-    font-size:18px;
+    font-size:2vw;
     cursor:pointer;
+    display: none;
 }
 .hero{
     display:flex;
+    flex-direction: column;
     justify-content:space-between;
     align-items:center;
     padding:70px 80px;
@@ -55,29 +60,29 @@ button{
 }
 
 .left{
-    width:50%;
+    width:100%;
 }
 
 .left h1{
-    font-size:60px;
+    font-size:3vw;
     color:#0b2b6b;
     margin-bottom:25px;
 }
 
 .left p{
-    font-size:22px;
+    font-size:2vw;
     color:#444;
     line-height:1.6;
     margin-bottom:35px;
 }
 
 .right{
-    width:50%;
+    width:100%;
     text-align:center;
 }
 
 .right img{
-    width:500px;
+    max-width: 100%;
 }
 
 .course-btn{
@@ -85,3 +90,16 @@ button{
     padding:18px 40px;
     font-size:20px;
 }
+@media (max-width:768px) {
+    .menu-icon{font-size:30px;
+    cursor:pointer;
+    display:block;
+color: #222;}
+    
+nav {
+    padding:15px 20px
+}
+nav ul{display: none;}
+button{display: none;}
+.hero{ flex-direction: column;}
+.left, .right{width: 100%;}}
