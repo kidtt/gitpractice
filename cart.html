@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Store</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<h1>Electronics Store</h1>
+
+<h2>Total Price: $<span id="total">0</span></h2>
+
+<div class="products">
+
+    <div class="card">
+        <img src="laptop.jpg" alt="">
+        <h3>Laptop</h3>
+        <p>Category: Computer</p>
+        <p>Powerful laptop for work.</p>
+        <p>price:800</p>
+        <button onclick="addToCart(800)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="smartphone.jpg" alt="">
+        <h3>Smartphone</h3>
+        <p>Category: Mobile</p>
+        <p>Latest Android phone.</p>
+        <p>price:500</p>
+
+        <button onclick="addToCart(500)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="headphone.jpg" alt="">
+        <h3>Headphones</h3>
+        <p>Category: Audio</p>
+        <p>Wireless headphones.</p>
+        <p>price:120</p>
+        <button onclick="addToCart(120)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="smartphone.jpg" alt="">
+        <h3>Smart Watch</h3>
+        <p>Category: Wearable</p>
+        <p>Fitness tracking watch.</p>
+         <p>price:200</p>
+
+        <button onclick="addToCart(200)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="keyboard.jpg" alt="">
+        <h3>Keyboard</h3>
+        <p>Category: Accessories</p>
+        <p>Mechanical keyboard.</p>
+                <p>price:80</p>
+
+        <button onclick="addToCart(80)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="mouse.jpg" alt="">
+        <h3>Mouse</h3>
+        <p>Category: Accessories</p>
+        <p>Gaming mouse.</p>
+                <p>price:50</p>
+
+        <button onclick="addToCart(50)">Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
